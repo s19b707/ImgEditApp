@@ -9,25 +9,31 @@
 
     <ImageButton
         android:id="@+id/imageButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="249dp"
+        android:layout_height="189dp"
+        android:layout_margin="@android:dimen/app_icon_size"
+        android:background="#00000000"
+        android:padding="@android:dimen/app_icon_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.852"
-        app:srcCompat="@drawable/help" />
+        app:layout_constraintVertical_bias="0.94"
+        android:src="@drawable/help" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="212dp"
+        android:layout_height="191dp"
+        android:layout_margin="@android:dimen/app_icon_size"
+        android:background="#00000000"
+        android:padding="@android:dimen/app_icon_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.226"
-        app:srcCompat="@drawable/howtouse" />
+        android:src="@drawable/howtouse" />
 
     <TextView
         android:id="@+id/textView"

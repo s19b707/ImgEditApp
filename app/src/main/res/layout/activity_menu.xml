@@ -3,30 +3,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#fee"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".MenuActivity">
 
     <TextView
         android:id="@+id/text_view"
-        android:textColor="#000"
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#000" />
+
     <Button
         android:id="@+id/button"
-        android:text="@string/button"
-        android:layout_margin="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/button" />
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/image_view"
-        android:scaleType="centerInside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
         android:contentDescription="@string/description"
-        android:layout_margin="10dp"
+        android:scaleType="fitStart" />
+    <!-- キャンバスクリア用ボタン -->
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="CLEAR" />
+
+    <jp.ac.shohoku.aporochoco.imgeditapp.CanvasView
+        android:id="@+id/canvas_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+</FrameLayout>
+
+
+
 
 </LinearLayout>
